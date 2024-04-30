@@ -16,7 +16,7 @@ body {
 
 #background {
 	
-	background-image: url('../assets/images/background-pattern-desktop.svg');
+	background-image: url('background-pattern-desktop.svg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
