@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+	font-family: Work Sans, sans-serif;
+	background-color:#FFCDEA;
+	
+}
+
+#background {
+	
+	background-image: url('../assets/images/background-pattern-desktop.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100vw;
+	height: 30vh;
+}
+
+#grid {
+	display: grid;
+	
+	width: 100vw;
+	height: 100vh;
+	
+}
+
+main {
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	place-self: center;
+	width: 40%;
+	background-color: white;
+	padding: 2rem;
+	border-radius: 30px;
+	
+}
+
+header {
+	display: flex;
+	justify-content: start;
+	gap: 1rem;
+	padding-bottom: 2rem;
+}
+
+header img, header h1 {
+	padding: 0;
+	margin: 0;
+}
+
+header h1 {
+	text-transform: uppercase;
+}
+
+header h1 span {
+	text-transform: lowercase;
+}
+
+article label {
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+}
+
+article label:hover {
+	color: pink;
+}
+
+article {
+	padding-bottom: 1rem;
+
+	& p {
+		padding-top: 1rem;
+	}
+	
+	& label {
+		
+	
+		& h1 {
+			padding: 0;
+			margin: 0;
+		}
+	    & img:last-child {
+	    	display: none;
+	    } 
+	}	
+}
+
+
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+
+
+input[type="checkbox"] ~ p {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+input[type="checkbox"]:checked ~ p {
+  max-height: 200px;
+}
+
+input[type="checkbox"]:checked ~ label img:last-child {
+	display: block;
+}
+
+input[type="checkbox"]:checked ~ label .plus {
+	display: none;
+}
+
+hr {
+	margin-bottom: 10px;
+	
+}
